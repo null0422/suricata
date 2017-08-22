@@ -1,0 +1,77 @@
+alert tcp any any -> any 80 (msg:"gilgil rule"; content:"GET /"; content:"Host: www.gilgil.net"; sid:10001; rev:1;)
+alert tcp any any -> any 80 (msg:"naver rule"; content:"GET /"; content:"Host: www.naver.com"; sid:10002; rev:1;)
+alert tcp any any -> any 80 (msg:"hitomi.la"; content:"GET / "; content:"Host: hitomi.la"; sid:10003; rev:1;)
+alert tcp any any -> any 80 (msg:"kass.org.kp"; content:"GET / "; content:"Host: kass.org.kp"; sid:10004; rev:1;)
+alert tcp any any -> any 80 (msg:"kcna.kp"; content:"GET / "; content:"Host: kcna.kp"; sid:10005; rev:1;)
+alert tcp any any -> any 80 (msg:"kitribob"; content:"GET /wiki/ HTTP/1.1"; content:"Host: kitribob"; sid:10006; rev:1;)
+alert tcp any any -> any 80 (msg:"ks8282.com rule"; content:"GET /"; content:"Host: ks8282.com"; sid:10007; rev:1;)
+alert tcp any any -> any 80 (msg:"linoit.com rule"; content:"GET /"; content:"Host: linoit.com"; sid:10008; rev:1;)
+alert tcp any any -> any 80 (msg:"named.com rule"; content:"GET /"; content:"Host: named.com"; sid:10009; rev:1;)
+alert tcp any any -> any 80 (msg:"naver6.com rule"; content:"GET /"; content:"Host: named.com"; sid:10010; rev:1;)
+alert tcp any any -> any 80 (msg:"onaratv.com rule"; content:"GET /"; content:"Host: onaratv.com"; sid:10011; rev:1;)
+alert tcp any any -> any 80 (msg:"pornpros.com rule"; content:"GET /"; content:"Host: pornpros.com"; sid:10012; rev:1;)
+alert tcp any any -> any 80 (msg:"rodong.rep.kp rule"; content:"GET /"; content:"Host: rodong.rep.kp"; sid:10013; rev:1;)
+alert tcp any any -> any 80 (msg:"snoopspy.com rule"; content:"GET /"; content:"Host: snoopspy.com/download"; sid:10014; rev:1;)
+alert tcp any any -> any 80 (msg:"test.gilgil.net rule"; content:"GET /"; content:"Host: test.gilgil.net"; sid:10015; rev:1;)
+alert tcp any any -> any 80 (msg:"uriminzokkiri.com rule"; content:"GET /"; content:"Host: uriminzokkiri.com"; sid:10016; rev:1;)
+alert tcp any any -> any 80 (msg:"4shared.com rule"; content:"GET /"; content:"Host: www.4shared.com"; sid:10017; rev:1;)
+alert tcp any any -> any 80 (msg:"bamwar25.com rule"; content:"GET /"; content:"Host: www.bamwar25.com"; sid:10018; rev:1;)
+alert tcp any any -> any 80 (msg:"faa25.com rule"; content:"GET /"; content:"Host: www.faa25.com"; sid:10019; rev:1;)
+alert tcp any any -> any 80 (msg:"ilbe.com rule"; content:"GET /"; content:"Host: www.ilbe.com"; sid:10020; rev:1;)
+alert tcp any any -> any 80 (msg:"kimmadam.net rule"; content:"GET /"; content:"Host: www.kimmadam.net"; sid:10021; rev:1;)
+alert tcp any any -> any 80 (msg:"minjok.com rule"; content:"GET /"; content:"Host: www.minjok.com"; sid:10022; rev:1;)
+alert tcp any any -> any 80 (msg:"narutoxxx.com rule"; content:"GET /"; content:"Host: www.narutoxxx.com"; sid:10023; rev:1;)
+alert tcp any any -> any 80 (msg:"naver.cm rule"; content:"GET /"; content:"Host: www.naver.cm"; sid:10024; rev:1;)
+alert tcp any any -> any 80 (msg:"ryomyong.com rule"; content:"GET /"; content:"Host: www.ryomyong.com"; sid:10025; rev:1;)
+alert tcp any any -> any 80 (msg:"sedisk.com rule"; content:"GET /"; content:"Host: www.sedisk.com"; sid:10026; rev:1;)
+alert tcp any any -> any 80 (msg:"sk386.com rule"; content:"GET /"; content:"Host: www.sk386.com"; sid:10027; rev:1;)
+alert tcp any any -> any 80 (msg:"tcosc.net rule"; content:"GET /"; content:"Host: www.tcosc.net"; sid:10028; rev:1;)
+alert tcp any any -> any 80 (msg:"torenzoa.net rule"; content:"GET /"; content:"Host: www.torenzoa.net"; sid:10029; rev:1;)
+alert tcp any any -> any 80 (msg:"umj262.com rule"; content:"GET /"; content:"Host: www.umj262.com"; sid:10030; rev:1;)
+alert tcp any any -> any 80 (msg:"uriminzokkiri.com rule"; content:"GET / HTTP/1.1"; content:"Host: www.uriminzokkiri.com"; sid:10031; rev:1;)
+alert tcp any any -> any 80 (msg:"winclub88.net rule"; content:"GET /"; content:"Host: www.winclub88.co"; sid:10032; rev:1;)
+
+alert tls any any -> any 443 (msg:"graphgame.net rule"; tls_sni; content:"graphgame.net"; nocase; sid:10033; rev:1;)
+alert dns any any -> any 53 (msg:"graphgame.net rule"; dns_query; content:"graphgame.net"; sid:10034; rev:1;)
+
+alert tls any any -> any 443 (msg:"wixsite.com rule"; tls_sni; content:"www.wix.com"; nocase; sid:10035; rev:1;)
+alert dns any any -> any 53 (msg:"wixsite.com rule"; dns_query; content:"www.wix.com"; sid:10036; rev:1;)
+
+alert tls any any -> any 443 (msg:"sex.com rule"; tls_sni; content:"sex.com"; nocase; sid:10035; rev:1;)
+alert dns any any -> any 53 (msg:"sex.com rule"; dns_query; content:"sex.com"; sid:10036; rev:1;)
+
+alert tls any any -> any 443 (msg:"torrenthaja.com rule"; tls_sni; content:"torrenthaja.com"; nocase; sid:10035; rev:1;)
+alert dns any any -> any 53 (msg:"torrenthaja.com rule"; dns_query; content:"torrenthaja.com"; sid:10036; rev:1;)
+
+
+alert tls any any -> any 443 (msg:"torrentkim10.net rule"; tls_sni; content:"torrentkim10.net"; nocase; sid:10035; rev:1;)
+alert dns any any -> any 53 (msg:"torrentkim10.net rule"; dns_query; content:"torrentkim10.net"; sid:10036; rev:1;)
+
+
+alert tls any any -> any 443 (msg:"webtoon.bamtoki.com rule"; tls_sni; content:"webtoon.bamtoki.com"; nocase; sid:10035; rev:1;)
+alert dns any any -> any 53 (msg:"webtoon.bamtoki.com rule"; dns_query; content:"webtoon.bamtoki.com"; sid:10036; rev:1;)
+
+
+alert tls any any -> any 443 (msg:"www.facebook.com rule"; tls_sni; content:"www.facebook.com"; nocase; sid:10035; rev:1;)
+alert dns any any -> any 53 (msg:"www.facebook.com rule"; dns_query; content:"www.facebook.com"; sid:10036; rev:1;)
+
+
+alert tls any any -> any 443 (msg:"www.mtbucks.com rule"; tls_sni; content:"www.mtbucks.com"; nocase; sid:10035; rev:1;)
+alert dns any any -> any 53 (msg:"www.mtbucks.com rule"; dns_query; content:"www.mtbucks.com"; sid:10036; rev:1;)
+
+
+alert tls any any -> any 443 (msg:"www.opioids.com rule"; tls_sni; content:"www.opioids.com"; nocase; sid:10035; rev:1;)
+alert dns any any -> any 53 (msg:"www.opioids.com rule"; dns_query; content:"www.opioids.com"; sid:10036; rev:1;)
+
+
+alert tls any any -> any 443 (msg:"www.phishtank.com"; tls_sni; content:"www.phishtank.com"; nocase; sid:10035; rev:1;)
+alert dns any any -> any 53 (msg:"www.phishtank.com"; dns_query; content:"www.phishtank.com"; sid:10036; rev:1;)
+
+
+alert tls any any -> any 443 (msg:"yobit.net/en/dice/ rule"; tls_sni; content:"yobit.net/en/dice/"; nocase; sid:10035; rev:1;)
+alert dns any any -> any 53 (msg:"yobit.net/en/dice/ rule"; dns_query; content:"yobit.net/en/dice/"; sid:10036; rev:1;)
+
+
+alert tls any any -> any 443 (msg:"wixsite.com rule"; tls_sni; content:"www.wix.com"; nocase; sid:10035; rev:1;)
+alert dns any any -> any 53 (msg:"wixsite.com rule"; dns_query; content:"www.wix.com"; sid:10036; rev:1;)
+
